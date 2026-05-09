@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Git Demo Website</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <header>
+    <div class="container navbar">
+      <div>
+        <h1>Git & GitHub Demo Projekt</h1>
+        <p>Perfekt für Ihre Git-Aufgabe mit Branches, Commits und Pull Requests.</p>
+      </div>
+
+      <button id="repoBtn">Repository starten</button>
+    </div>
+  </header>
+
+  <main class="container">
+
+    <section class="hero">
+      <div class="hero-text">
+        <h2>Lernen Sie Git mit einem echten Projekt.</h2>
+
+        <p>
+          Dieses kleine Webprojekt eignet sich ideal, um alle wichtigen
+          Git-Befehle praktisch anzuwenden und im Repository nachzuweisen.
+        </p>
+
+        <div class="buttons">
+          <button>GitHub</button>
+          <button class="secondary">Dokumentation</button>
+        </div>
+      </div>
+
+      <div class="terminal">
+<pre>
+git init
+
+git add .
+
+git commit -m "Initial commit"
+
+git checkout -b feature-darkmode
+
+git merge feature-darkmode
+
+git push origin main
+</pre>
+      </div>
+    </section>
+
+    <section>
+      <h3>Projektinhalte</h3>
+
+      <div class="cards" id="featureCards"></div>
+    </section>
+
+    <section class="bottom-grid">
+
+      <div class="panel">
+        <h3>Branch-Ideen</h3>
+
+        <ul>
+          <li>feature-darkmode</li>
+          <li>feature-navbar</li>
+          <li>feature-contact</li>
+          <li>feature-animation</li>
+        </ul>
+      </div>
+
+      <div class="panel">
+        <h3>Beispiel Commits</h3>
+
+        <div id="commitList"></div>
+      </div>
+
+    </section>
+
+    <section class="cta">
+      <h3>Bereit für GitHub?</h3>
+
+      <p>
+        Nutzen Sie dieses Projekt, um Branches, Merges,
+        Pull Requests und Git-Kommandos praktisch nachzuweisen.
+      </p>
+
+      <button id="publishBtn">Projekt veröffentlichen</button>
+    </section>
+
+  </main>
+
+  <footer>
+    <div class="container footer-content">
+      <span>Git Demo Website</span>
+      <span>Erstellt für Git/GitHub Übungen</span>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
