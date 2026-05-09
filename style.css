@@ -1,0 +1,198 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background: #0f172a;
+  color: white;
+  line-height: 1.6;
+}
+
+.container {
+  width: 90%;
+  max-width: 1200px;
+  margin: auto;
+}
+
+header {
+  border-bottom: 1px solid #1e293b;
+  background: #111827;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 30px 0;
+}
+
+.navbar p {
+  color: #94a3b8;
+  margin-top: 10px;
+}
+
+button {
+  padding: 12px 24px;
+  border: none;
+  border-radius: 12px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+button:hover {
+  transform: scale(1.05);
+}
+
+#repoBtn,
+#publishBtn,
+.buttons button:first-child {
+  background: white;
+  color: black;
+}
+
+.secondary {
+  background: transparent;
+  border: 1px solid #334155;
+  color: white;
+}
+
+.hero {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 40px;
+  align-items: center;
+  padding: 80px 0;
+}
+
+.hero h2 {
+  font-size: 3rem;
+  margin-bottom: 20px;
+}
+
+.hero p {
+  color: #94a3b8;
+  margin-bottom: 30px;
+}
+
+.buttons {
+  display: flex;
+  gap: 15px;
+}
+
+.terminal {
+  background: #111827;
+  border: 1px solid #1e293b;
+  border-radius: 20px;
+  padding: 30px;
+}
+
+pre {
+  color: #22c55e;
+  overflow-x: auto;
+}
+
+section {
+  margin-bottom: 80px;
+}
+
+h3 {
+  font-size: 2rem;
+  margin-bottom: 30px;
+}
+
+.cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 20px;
+}
+
+.card {
+  background: #111827;
+  border: 1px solid #1e293b;
+  border-radius: 20px;
+  padding: 25px;
+  transition: 0.3s;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+}
+
+.card p {
+  color: #94a3b8;
+  margin-top: 15px;
+}
+
+.bottom-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 30px;
+}
+
+.panel {
+  background: #111827;
+  border: 1px solid #1e293b;
+  border-radius: 20px;
+  padding: 30px;
+}
+
+.panel ul {
+  list-style: none;
+}
+
+.panel li {
+  margin-bottom: 15px;
+}
+
+.commit-item {
+  background: #0f172a;
+  border: 1px solid #1e293b;
+  padding: 15px;
+  border-radius: 12px;
+  margin-bottom: 15px;
+}
+
+.cta {
+  background: linear-gradient(135deg, #2563eb, #4f46e5);
+  padding: 60px 40px;
+  border-radius: 25px;
+  text-align: center;
+}
+
+.cta p {
+  max-width: 700px;
+  margin: 20px auto;
+}
+
+footer {
+  border-top: 1px solid #1e293b;
+  padding: 30px 0;
+}
+
+.footer-content {
+  display: flex;
+  justify-content: space-between;
+  color: #94a3b8;
+}
+
+@media (max-width: 768px) {
+  .navbar {
+    flex-direction: column;
+    gap: 20px;
+    text-align: center;
+  }
+
+  .hero h2 {
+    font-size: 2.2rem;
+  }
+
+  .footer-content {
+    flex-direction: column;
+    gap: 10px;
+    text-align: center;
+  }
+}
